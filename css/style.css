@@ -1,0 +1,136 @@
+.header {
+  -webkit-box-shadow: 0 21px 21px rgba(0, 0, 0, 0.28);
+          box-shadow: 0 21px 21px rgba(0, 0, 0, 0.28);
+  background-color: #ffffff;
+  opacity: 0.9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-link {
+  color: black;
+  font-size: 14px;
+}
+
+.header-navbar {
+  margin: 0;
+  list-style: none;
+}
+
+.header-navbar__elem {
+  float: left;
+  padding: 20px 15px;
+}
+
+.header-text {
+  padding: 10px 0;
+  text-align: right;
+  float: right !important;
+}
+
+.header-text__phone {
+  text-decoration: none;
+  color: #1f1f1f;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.header-text__text {
+  color: #22bac1;
+  font-size: 14px;
+}
+
+.menu {
+  position: relative;
+  background: none;
+  padding: 125px 0 100px 0;
+}
+
+.menu-text__title {
+  margin: 0;
+  color: #fffafa;
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 400;
+}
+
+.menu-text__title span {
+  font-size: 20px;
+}
+
+.menu-wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.2fr 1fr;
+      grid-template-columns: 1.2fr 1fr;
+}
+
+.menu-contact {
+  display: block;
+  text-align: center;
+  width: 370px;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  margin-left: auto;
+}
+
+.menu-contact__input {
+  width: 258px;
+  height: 50px;
+  margin-top: 15px;
+  font-size: 13px;
+  text-align: center;
+  border: 1px solid #e8e8e8;
+}
+
+.menu-contact__button {
+  margin-top: 20px;
+  margin-bottom: 43px;
+  background-color: #23bac1;
+  width: 260px;
+  height: 60px;
+}
+
+.menu-contact__title {
+  padding-left: 14%;
+  padding-right: 14%;
+  margin: 0;
+  font-size: 18px;
+  padding-top: 40px;
+  padding-bottom: 13px;
+}
+
+.backstretch {
+  background-color: #010304;
+  position: absolute;
+  top: -58px;
+  z-index: -10;
+}
+
+.backstretch img {
+  opacity: 1.15;
+}
+
+body {
+  margin: 0;
+  max-width: 100%;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  z-index: 2;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.button {
+  outline: none;
+  border: 0px;
+}
+
+.input {
+  outline: none;
+}
+/*# sourceMappingURL=style.css.map */

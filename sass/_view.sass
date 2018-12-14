@@ -1,0 +1,94 @@
+.view
+  &-text
+    display: flex
+    align-items: center
+    text-align: center
+    justify-content: center
+    &__elem
+      ul
+        padding: 0
+      li
+        margin: auto
+        list-style-type: none
+        width: 31px
+        height: 2px
+        background-color: #23bac1
+    &__title
+      font-size: 36px
+      font-weight: 400
+      margin: 
+        top: 100px
+        bottom: 25px
+    &__subtitle
+      font-size: 20px
+      font-weight: 300
+      margin: 
+        top: 25px
+        bottom: 80px
+  &-wrap
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    text-align: center
+.card
+  display: flex
+  flex-wrap: wrap
+  flex-flow: column
+  display: inline-flex
+  max-width: 350px
+  padding: 30px
+    top: 0
+  margin: 10px
+  border: 1px solid #e8e8e800  
+  &-title
+    font-size: 20px
+    font-weight: 400
+    margin:
+      left: auto
+      right: auto
+  &-text
+    font-size: 16px
+    font-weight: 300
+    line-height: 35px
+    &__wrap
+      font-size: 16px
+      line-height: 35px
+      margin: 0 auto
+      ul
+        margin: 0
+        padding: 0
+      li
+        margin: auto
+        list-style-type: none
+        width: 9px
+        height: 2px
+        background-color: #23bac1
+    &__elem
+      &-1
+        margin: auto
+        width: 240px
+        font-size: 16px
+        font-weight: 300
+        line-height: 21px
+  &-img__wrap
+    margin-bottom: 25px
+    img
+      width: 290px
+      height: 220px
+  &-button
+    margin:
+      top: 20px
+      bottom: 25px
+    height: 60px
+    font:
+      size: 13px
+      weight: 400
+    letter-spacing: 0.33px
+    text-transform: uppercase
+    width: 230px
+
+.card:hover 
+  box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1)
+  .card-button
+    background-color: #23bac1
+    color: #ffffff 

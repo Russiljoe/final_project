@@ -1,11 +1,15 @@
 
 @import 'header'
 @import 'menu'
+@import 'view'
 
+*, *::after, *:before
+  box-sizing: border-box
 body
   margin: 0
+  max-width: 100%
 .container
-  max-width: 1170px
+  width: 1170px
   margin: 0 auto
   z-index: 2
   padding:
@@ -18,5 +22,11 @@ body
   outline: none
 
 
-
-@import 'media'
+  
+@media (max-width: 1920px)
+  .container
+    max-width: -webkit-fill-available
+    
+@media (max-width: 1024px)
+  .container
+    width: auto

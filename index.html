@@ -11,21 +11,23 @@
   <!-- header -->
   <header class="header">
     <div class="container">
-      <div class="header-nav" id="top-navbar-1">
-        <ul class="header-navbar">
-          <li class="header-navbar__elem"><a class="header-link" href="#manu">Главная</a></li>
-          <li class="header-navbar__elem"><a class="header-link" href="#">Виды макетов</a></li>
-          <li class="header-navbar__elem"><a class="header-link" href="#">Комплектация макетов</a></li>
-          <li class="header-navbar__elem"><a class="header-link" href="#">Реализованные проекты</a></li>
-          <li class="header-navbar__elem"><a class="header-link" href="#">Наши клиенты</a></li>
-          <li class="header-navbar__elem"><a class="header-link" href="#">Контакты</a></li>
-        </ul>
-      </div>
-      <div class="header-text">
-        <a class="header-text__phone" href="tel:+78008913333">8 800 891-33-33</a> <br>
-        <a class="header-text__text" href="#">Заказать обратный звонок</a>
+      <div class="header-wrap">
+        <div class="topnav" id="myTopnav">
+          <a href="#" id="menu" class="icon">&#9776</a>
+          <a href="#manu">Главная</a>
+          <a href="#">Виды макетов</a>
+          <a href="#">Комплектация макетов</a>
+          <a href="#">Реализованные проекты</a>
+          <a href="#">Наши клиенты</a>
+          <a href="#">Контакты</a>
+        </div>
+        <div class="header-text">
+          <a class="header-text__phone" href="tel:+78008913333">8 800 891-33-33</a><br>
+          <a class="header-text__text" href="#">Заказать обратный звонок</a>
+        </div>
       </div>
     </div>
+    <div class="fone"></div>
   </header>
   
   <!-- manu -->
@@ -36,6 +38,32 @@
           <h1 class="menu-text__title">Изготовление макетов любой сложности 
             <br> <span>Продажи. Инвестиции. Имидж.</span>
           </h1>
+          <div class="menu-advantages">
+            <div class="menu-advantages__item">
+              <div class="menu-advantages__img menu-advantages__img-1">5</div>
+              <div class="menu-advantages__text">
+                Точно соблюдаем сроки
+              </div>
+            </div>
+            <div class="menu-advantages__item">
+              <div class="menu-advantages__img menu-advantages__img-2">24</div>
+              <div class="menu-advantages__text">
+                Рассчитаем смету на работы и материалы в день обращения
+              </div>
+            </div>
+            <div class="menu-advantages__item">
+              <div class="menu-advantages__img menu-advantages__img-3"></div>
+              <div class="menu-advantages__text">
+                Предложим более 100 вариантов исполнения дизайна Вашего жилья
+              </div>
+            </div>
+            <div class="menu-advantages__item">
+              <div class="menu-advantages__img menu-advantages__img-4"></div>
+              <div class="menu-advantages__text">
+                Предложим более 100 вариантов исполнения дизайна Вашего жилья
+              </div>
+            </div>
+          </div>
         </div>
         <div class="menu-contact">
           <h2 class="menu-contact__title">Оставьте заявку и получите расчет стоимость макета в течение 30 минут</h2>
@@ -46,10 +74,8 @@
         </div>
       </div>
     </div>
-  <div class="backstretch">
-    <img src="img\manu\background.png">
-  </div>
   </section>
   
+  <script src="js/script.js"></script>
 </body>
 </html>

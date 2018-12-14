@@ -1,6 +1,10 @@
 .menu
+  background: url(../img/manu/background.png) no-repeat
+    color: #010304
+    size: cover
+  position: absolute
+  z-index: -10
   position: relative
-  background: none
   padding: 125px 0 100px 0
   &-text
     &__title
@@ -11,9 +15,12 @@
       font-weight: 400
       span
         font-size: 20px
+        font-weight: 300
+        display: block
+        margin: 30px 0
   &-wrap
     display: grid
-    grid-template-columns: 1.2fr 1fr
+    grid-template-columns: 1fr 1fr
   &-contact
     display: block
     text-align: center
@@ -45,9 +52,68 @@
         top: 40px
         bottom: 13px
 .backstretch
-  background-color: #010304
   position: absolute
   top: -58px
   z-index: -10
-  img
-    opacity: 1.15
+  opacity: 1.15  
+.menu
+  &-advantages
+    width: 300px
+    color: #ffffff
+    &__text
+      font-size: 15px
+      font-weight: 300
+    &__item
+      display: flex
+      align-items: center
+      margin-bottom: 20px
+    &__img
+      font-size: 16px
+      min:
+        width: 35px
+        height: 35px
+      border: 1px solid #ffffff
+        radius: 50%
+      opacity: 0.2
+      margin-right: 30px
+      background:
+        size: 16px
+        repeat: no-repeat
+        position: center
+      align-items: center
+      &-1, &-2
+        text-align: center
+        display: flex
+        justify-content: center
+      &-3
+        background-image: url('../img/manu/reload.png')
+      &-4
+        background-image: url('../img/manu/map-location.png')
+
+@media (max-width: 992px)
+  .menu
+    padding: 60px 0
+    &-wrap
+      display: block
+      justify-content: center
+      align-items: center
+      margin: 0 auto
+      width: 500px
+    &-contact
+      margin: auto
+    &-advantages
+      margin: auto
+      margin-bottom: 60px
+    &-text
+      &__title
+        margin-bottom: 30px
+        text-align: center
+@media (max-width: 768px)
+  .menu
+    padding: 30px 0
+    &-text
+      &__title
+        font-size: 30px
+        line-height: 30px
+        span
+          font-size: 20px

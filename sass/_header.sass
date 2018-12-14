@@ -2,16 +2,9 @@
   box-shadow: 0 21px 21px rgba(0, 0, 0, 0.28)
   background-color: #ffffff
   opacity: 0.9
-  display: flex
-  &-link
-    color: black
-    font-size: 14px
-  &-navbar
-    margin: 0
-    list-style: none
-    &__elem
-      float: left
-      padding: 20px 15px
+  &-wrap
+    display: grid
+    grid-template-columns: 3fr 1fr
   &-text
     padding: 10px 0
     text-align: right
@@ -24,3 +17,38 @@
     &__text
       color: #22bac1
       font-size: 14px
+.topnav
+  font-size: 14px
+  margin: auto 0
+  a
+    color: #000000
+    padding: 0 5px
+nav
+  margin: auto
+.icon
+  text-decoration: none
+  display: none
+  font-size: 20px
+
+@media screen and (max-width: 992px)
+  .header
+    &-wrap
+      grid-template-columns: 1fr 1fr
+  .topnav a:not(:first-child)
+    display: none
+    a.icon
+      float: left
+      margin-top: -17px
+      display: block
+      color: black
+  .topnav
+    margin: auto 15px
+    .responsive
+      position: relative
+      a
+        float: none
+        display: block
+        text-align: left
+  .icon
+    position: absolute
+    display: contents

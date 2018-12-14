@@ -6,6 +6,7 @@
   position: fixed;
   left: 0;
   right: 0;
+  z-index: 1;
 }
 
 .header-wrap {
@@ -88,7 +89,6 @@ nav {
   background: url(../img/manu/background.png) no-repeat;
   background-color: #010304;
   background-size: cover;
-  z-index: -10;
   position: relative;
   padding: 125px 0 100px 0;
 }
@@ -347,9 +347,6 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   max-width: 350px;
   padding: 30px;
   padding-top: 0;
@@ -373,7 +370,8 @@ nav {
 .card-text__wrap {
   font-size: 16px;
   line-height: 35px;
-  margin: 0 auto;
+  margin: auto;
+  margin-top: 0;
 }
 
 .card-text__wrap ul {
@@ -404,6 +402,8 @@ nav {
 .card-img__wrap img {
   width: 290px;
   height: 220px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 .card-button {
@@ -415,6 +415,11 @@ nav {
   letter-spacing: 0.33px;
   text-transform: uppercase;
   width: 230px;
+  background-color: #ffffff;
+}
+
+.card-button__wrap {
+  margin: 0 auto;
 }
 
 .card:hover {
@@ -425,6 +430,12 @@ nav {
 .card:hover .card-button {
   background-color: #23bac1;
   color: #ffffff;
+  border: 0;
+}
+
+.card:hover img {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
 }
 
 *, *::after, *:before {
@@ -447,7 +458,7 @@ body {
 
 .button {
   outline: none;
-  border: 0px;
+  border: 1px solid #aeaeae;
 }
 
 .input {

@@ -34,12 +34,11 @@
   display: flex
   flex-wrap: wrap
   flex-flow: column
-  display: inline-flex
   max-width: 350px
   padding: 30px
     top: 0
   margin: 10px
-  border: 1px solid #e8e8e800  
+  border: 1px solid #e8e8e800
   &-title
     font-size: 20px
     font-weight: 400
@@ -53,7 +52,8 @@
     &__wrap
       font-size: 16px
       line-height: 35px
-      margin: 0 auto
+      margin: auto
+        top: 0 
       ul
         margin: 0
         padding: 0
@@ -75,6 +75,7 @@
     img
       width: 290px
       height: 220px
+      filter: grayscale(100%)
   &-button
     margin:
       top: 20px
@@ -86,9 +87,16 @@
     letter-spacing: 0.33px
     text-transform: uppercase
     width: 230px
+    background-color: #ffffff
+    &__wrap
+      margin: 0 auto
+
 
 .card:hover 
   box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1)
   .card-button
     background-color: #23bac1
     color: #ffffff 
+    border: 0
+  img
+    filter: grayscale(0)

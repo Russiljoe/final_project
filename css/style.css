@@ -3,6 +3,9 @@
           box-shadow: 0 21px 21px rgba(0, 0, 0, 0.28);
   background-color: #ffffff;
   opacity: 0.9;
+  position: fixed;
+  left: 0;
+  right: 0;
 }
 
 .header-wrap {

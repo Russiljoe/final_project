@@ -15,7 +15,9 @@
         font-size: 20px
         font-weight: 300
         display: block
-        margin: 30px 0
+        margin: 0
+          top: 10px
+          bottom: 28px
   &-wrap
     display: grid
     grid-template-columns: 1fr 1fr
@@ -30,14 +32,14 @@
       width: 258px
       height: 50px
       margin:
-        top: 15px
+        top: 16px
       font-size: 13px
       text-align: center
       border: 1px solid #e8e8e8
     &__button
       margin:
         top: 20px
-        bottom: 25px
+        bottom: 43px
       background-color: #23bac1
       color: #ffffff
       width: 260px
@@ -47,6 +49,10 @@
         weight: 400
       letter-spacing: 0.38px
       text-transform: uppercase
+      &:hover 
+        background-color: #000000
+        color: #ffffff
+        border: 0
     &__title
       padding:
         left: 14%
@@ -54,7 +60,10 @@
         top: 40px
         bottom: 13px
       margin: 0
-      font-size: 18px      
+      font-size: 18px
+      +Light     
+      span
+        +Bold
 .backstretch
   position: absolute
   top: -58px

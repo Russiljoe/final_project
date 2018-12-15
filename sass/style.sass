@@ -1,13 +1,18 @@
 
+@import 'fonts'
+@import 'mixins'
+
 @import 'header'
 @import 'menu'
 @import 'view'
+@import 'realised'
 
 *, *::after, *:before
   box-sizing: border-box
 body
   margin: 0
   max-width: 100%
+  +Regular
 .container
   width: 1170px
   margin: 0 auto
@@ -16,12 +21,12 @@ body
     left: 1%
     right: 1%
 .button
-  outline: none
+  outline: none 
   border: 1px solid #aeaeae
+  &:hover
+    cursor: pointer
 .input
   outline: none
-
-
   
 @media (max-width: 1920px)
   .container

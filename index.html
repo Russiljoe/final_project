@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Diploma project</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slick.css">
 </head>
 <body>
   <!-- header -->
@@ -18,7 +19,7 @@
             <a href="#">Главная</a>
             <a href="#view">Виды макетов</a>
             <a href="#">Комплектация макетов</a>
-            <a href="#">Реализованные проекты</a>
+            <a href="#realised">Реализованные проекты</a>
             <a href="#">Наши клиенты</a>
             <a href="#">Контакты</a>
           </div>
@@ -42,31 +43,33 @@
             <div class="menu-advantages__item">
               <div class="menu-advantages__img menu-advantages__img-1">5</div>
               <div class="menu-advantages__text">
-                Точно соблюдаем сроки
+                Срок производства <br> от 5 дней
               </div>
             </div>
             <div class="menu-advantages__item">
               <div class="menu-advantages__img menu-advantages__img-2">24</div>
               <div class="menu-advantages__text">
-                Рассчитаем смету на работы и материалы в день обращения
+                Гарантия на макеты <br> 24 месяца
               </div>
             </div>
             <div class="menu-advantages__item">
               <div class="menu-advantages__img menu-advantages__img-3"></div>
               <div class="menu-advantages__text">
-                Предложим более 100 вариантов исполнения дизайна Вашего жилья
+                Проектируем, изготавливаем,
+                доставляем и устанавливаем
               </div>
             </div>
             <div class="menu-advantages__item">
               <div class="menu-advantages__img menu-advantages__img-4"></div>
               <div class="menu-advantages__text">
-                Предложим более 100 вариантов исполнения дизайна Вашего жилья
+                Застрахуем, доставим
+                и установим
               </div>
             </div>
           </div>
         </div>
         <div class="menu-contact">
-          <h2 class="menu-contact__title">Оставьте заявку и получите расчет стоимость макета в течение 30 минут</h2>
+          <h2 class="menu-contact__title">Оставьте заявку и получите расчет стоимость макета в течение <span>30 минут</span></h2>
           <input class="input menu-contact__input" type="text" placeholder="Ваше имя">
           <input class="input menu-contact__input" type="text" placeholder="Контактный телефон">
           <input class="input menu-contact__input" type="text" placeholder="Электронная почта">
@@ -75,7 +78,6 @@
       </div>
     </div>
   </section><!-- menu -->
-
   
   <section class="view">
     <a name="view"></a>
@@ -223,6 +225,106 @@
     </div>
   </section><!-- view -->
 
+  <section class="realised">
+    <a name="realised"></a>
+    <div class="container">
+      <div class="realised-text">
+        <div class="realised-text__elem">
+          <h2 class="realised-text__title">Реализованные проекты</h2>
+          <ul><li></li></ul>
+          <h3 class="realised-text__subtitle">
+            Более 100 компаний уже решают свои бизнес – задачи с помощью наших макетов
+          </h3>
+        </div>
+      </div>
+      <div class="slider realised-slider slick-slider">
+        <div class="realised-slider_item">
+          <div class="row">
+            <div class="row-slick">
+              <div class="fotorama" data-nav="thumbs">
+                <a class="photo-slider_item" href="#">
+                  <img src="img/realised/realised-1.png" alt="1">
+                </a>
+              </div>
+            </div>
+            <div class="row-slick row-slick_left">
+              <h3>Порт Артек</h3>
+              <div class="row-last">
+                <div class="descrition-block">
+                  <small>Описание:</small>
+                  <p>Презентация порта Артек для первых лиц государства</p>
+                </div>
+              </div>
+              <div class="row-last">
+                <div class="descrition-block">
+                  <small>Масштаб:</small>
+                  <p>1:200</p>
+                </div>
+                <div class="descrition-block">
+                  <small>Размер:</small>
+                  <p>1000х2000</p>
+                </div>
+                <div class="descrition-block">
+                  <small>Срок изготовления:</small>
+                  <p>40 дней</p>
+                </div>
+              </div>
+              <button class="button row-button menu-contact__button">заказать макет</button>
+            </div>
+          </div>
+        </div><!-- realised-slider_item -->
+        <div class="realised-slider_item">
+          <div class="row">
+            <div class="row-slick">
+              <div class="fotorama" data-nav="thumbs">
+                <a class="photo-slider_item" href="#">
+                  <img src="img/realised/realised-2.png" alt="1">
+                </a>
+              </div>
+            </div>
+            <div class="row-slick row-slick_left">
+              <h3>Порт Артек</h3>
+              <div class="row-last">
+                <div class="descrition-block">
+                  <small>Описание:</small>
+                  <p>Презентация порта Артек для первых лиц государства</p>
+                </div>
+              </div>
+              <div class="row-last">
+                <div class="descrition-block">
+                  <small>Масштаб:</small>
+                  <p>1:200</p>
+                </div>
+                <div class="descrition-block">
+                  <small>Размер:</small>
+                  <p>1000х2000</p>
+                </div>
+                <div class="descrition-block">
+                  <small>Срок изготовления:</small>
+                  <p>40 дней</p>
+                </div>
+              </div>
+              <button class="button row-button menu-contact__button">заказать макет</button>
+            </div>
+          </div>
+        </div><!-- realised-slider_item -->
+      </div>
+    </div>
+  </section><!-- realised -->
+
   <script src="js/script.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script>
+    $(document).ready(function () {
+        $('.slider').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          nextArrow: '<div class="arrow arrow-right"></div>',
+          prevArrow: '<div class="arrow arrow-left"></div>',
+        });
+      });
+  </script>
+
 </body>
 </html>

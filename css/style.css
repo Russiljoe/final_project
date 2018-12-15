@@ -632,6 +632,7 @@ nav {
 
 .realised {
   color: #000000;
+  padding-bottom: 100px;
 }
 
 .realised-text {
@@ -680,15 +681,22 @@ nav {
 .arrow {
   width: 40px;
   height: 40px;
-  background-color: #000000;
+  position: absolute;
+}
+
+.arrow-right {
+  background: url("../img/realised/button-right.png") no-repeat;
+}
+
+.arrow-left {
+  background: url("../img/realised/button-left.png") no-repeat;
+  margin-left: 93%;
 }
 
 .row {
   width: -webkit-fill-available;
   margin: auto 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -724,7 +732,6 @@ nav {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  flex-wrap-flow: column;
   max-width: 36%;
 }
 
@@ -735,6 +742,33 @@ nav {
 
 .fotorama {
   margin-right: 87px;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 992px) {
+  .fotorama {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .row {
+    display: -ms-grid;
+    display: grid;
+    text-align: -webkit-center;
+  }
+  .fotorama {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
 }
 
 *, *::after, *:before {

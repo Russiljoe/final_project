@@ -539,7 +539,7 @@ nav {
       -ms-flex-flow: column;
           flex-flow: column;
   max-width: 350px;
-  padding: 30px;
+  padding: 25px;
   padding-top: 0;
   margin: 10px;
   border: 1px solid #e8e8e800;
@@ -636,6 +636,7 @@ nav {
 }
 
 .realised {
+  background-color: #ffffff;
   color: #000000;
   margin-bottom: 100px;
 }
@@ -687,6 +688,10 @@ nav {
   width: 40px;
   height: 40px;
   position: absolute;
+}
+
+.arrow:hover {
+  cursor: pointer;
 }
 
 .arrow-right {
@@ -760,13 +765,24 @@ nav {
           align-items: center;
 }
 
+.descrition-block span {
+  padding: 5px;
+}
+
 @media (max-width: 992px) {
   .fotorama {
     margin-right: 20px;
   }
+  .arrow-right {
+    margin-left: 0;
+    z-index: -1;
+  }
+  .arrow-left {
+    z-index: -1;
+  }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .realised {
     margin-bottom: 30px;
   }
@@ -775,19 +791,16 @@ nav {
     display: grid;
     text-align: -webkit-center;
   }
+  .row-last {
+    text-align: center;
+    display: block;
+  }
   .fotorama {
     margin-right: 0;
     margin-bottom: 40px;
   }
-  .arrow-right {
-    margin-left: 90%;
-    margin-top: 20px;
-  }
-  .arrow-left {
-    margin-top: 20px;
-  }
   .slick-slide img {
-    width: -webkit-fill-available;
+    width: 100%;
   }
   .row-slick {
     max-width: 75%;
@@ -801,17 +814,31 @@ nav {
   .row-slick h3 {
     padding-bottom: 25px;
   }
+  .descrition-block {
+    margin: 5% auto;
+  }
+  .descrition-block br {
+    display: none;
+  }
 }
 
 @media (max-width: 375px) {
   .realised-text__title {
     margin-top: 30px;
   }
+  .arrow-right {
+    margin-left: 90%;
+    margin-top: 10px;
+  }
+  .arrow-left {
+    margin-top: 10px;
+  }
 }
 
 *, *::after, *:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  outline: none;
 }
 
 body {

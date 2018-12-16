@@ -1,4 +1,5 @@
 .realised
+  background-color: #ffffff
   color: #000000
   margin-bottom: 100px
   &-text
@@ -33,6 +34,8 @@
   width: 40px
   height: 40px
   position: absolute
+  &:hover
+    cursor: pointer
   &-right
     background: url('../img/realised/button-left.png') no-repeat center
     margin-left: 93%
@@ -71,30 +74,37 @@
 .slider
   display: flex
   align-items: center
+.descrition
+  &-block
+    span
+      padding: 5px
 
 @media (max-width: 992px)
   .fotorama 
       margin-right: 20px
+  .arrow
+    &-right
+      margin-left: 0
+      z-index: -1
+    &-left
+      z-index: -1
 
-@media (max-width: 767px)
+@media (max-width: 768px)
   .realised
     margin-bottom: 30px
   .row
     display: grid
     text-align: -webkit-center
+    &-last
+      text-align: center
+      display: block
   .fotorama 
       margin:
         right: 0
         bottom: 40px
-  .arrow
-    &-right
-      margin-left: 90%
-      margin-top: 20px
-    &-left
-      margin-top: 20px
   .slick-slide 
     img
-      width: -webkit-fill-available
+      width: 100%
   .row-slick
     &_left
     max-width: 75%
@@ -103,7 +113,18 @@
       margin-bottom: 40px
     h3
       padding-bottom: 25px
+  .descrition
+    &-block
+      margin: 5% auto
+      br
+        display: none
 
 @media (max-width: 375px)
   .realised-text__title
     margin-top: 30px
+  .arrow
+    &-right
+      margin-left: 90%
+      margin-top: 10px
+    &-left
+      margin-top: 10px

@@ -769,6 +769,11 @@ nav {
   padding: 5px;
 }
 
+.descrition-button {
+  margin: auto 0;
+  margin-bottom: 0;
+}
+
 @media (max-width: 992px) {
   .fotorama {
     margin-right: 20px;

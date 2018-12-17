@@ -70,12 +70,13 @@
         font-size: 16px
         font-weight: 300
         line-height: 21px
-  &-img__wrap
-    margin-bottom: 25px
-    img
-      width: 290px
-      height: 220px
-      filter: grayscale(100%)
+  &-img
+    &__wrap
+      margin-bottom: 25px
+      img
+        width: 290px
+        height: 220px
+        filter: grayscale(100%)
   &-button
     margin:
       top: 20px
@@ -99,6 +100,11 @@
     border: 0
   img
     filter: grayscale(0)
+.card-button:not(.menu-contact__button):hover 
+  background-color: #000000
+  color: #ffffff
+  border: 0
+
 
 @media (max-width: 375px)
   .card

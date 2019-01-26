@@ -1,0 +1,133 @@
+.picking
+  background-color: #ffffff
+  color: #000000
+  margin-bottom: 100px
+  &-text
+    display: flex
+    align-items: center
+    text-align: center
+    justify-content: center
+    &__elem
+      ul
+        padding: 0
+      li
+        margin: auto
+        list-style-type: none
+        width: 31px
+        height: 2px
+        background-color: #23bac1
+    &__title
+      font-size: 36px
+      font-weight: 400
+      margin: 
+        top: 100px
+        bottom: 25px
+    &__subtitle
+      font-size: 20px
+      font-weight: 300
+      margin: 
+        top: 25px
+        bottom: 80px
+    &_item
+      border: 1px solid #000000
+.arrow
+  width: 40px
+  height: 40px
+  position: absolute
+  &:hover
+    cursor: pointer
+  &-right
+    background: url('../img/picking/button-left.png') no-repeat center
+    margin-left: 93%
+    z-index: 1
+  &-left
+    background: url('../img/picking/button-right.png') no-repeat center
+    z-index: 1
+.row
+  width: -webkit-fill-available 
+  margin: auto 0
+  display: -webkit-inline-box
+  justify-content: center
+  &-last
+    width: -webkit-fill-available
+    margin: auto 0
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    justify-content: space-between
+    text-align: left
+  &-slick
+    h3
+      width: -webkit-fill-available
+      display: block
+      margin: 0
+        bottom: auto
+    &_left
+      display: flex
+      flex-wrap: wrap
+      max-width: 36%
+  &-button
+    margin: 0
+      top: auto
+.fotorama
+  margin-right: 87px
+.slider
+  display: flex
+  align-items: center
+.descrition
+  &-block
+    span
+      padding: 5px
+  &-button
+    margin: auto 0
+    margin-bottom: 0
+
+@media (max-width: 992px)
+  .fotorama 
+      margin-right: 20px
+  .arrow
+    &-right
+      margin-left: 0
+      z-index: -1
+    &-left
+      z-index: -1
+
+@media (max-width: 768px)
+  .picking
+    margin-bottom: 30px
+  .row
+    display: grid
+    text-align: -webkit-center
+    &-last
+      text-align: center
+      display: block
+  .fotorama 
+      margin:
+        right: 0
+        bottom: 40px
+  .slick-slide 
+    img
+      width: 100%
+  .row-slick
+    &_left
+    max-width: 90%
+    justify-content: center
+    &__subtitle
+      margin-bottom: 40px
+    h3
+      padding-bottom: 25px
+  .descrition
+    &-block
+      margin: 5% auto
+      br
+        display: none
+
+@media (max-width: 375px)
+  .picking-text__title
+    margin-top: 30px
+  .arrow
+    &-right
+      margin-left: 90%
+      margin-top: 10px
+    &-left
+      margin-top: 10px

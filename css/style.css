@@ -521,9 +521,9 @@ nav {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   text-align: center;
 }
 
@@ -857,7 +857,7 @@ nav {
   font-size: 24px;
   font-weight: 400;
   line-height: 31px;
-  margin: 0 185px;
+  margin: 0 17%;
   padding: 100px 0;
 }
 
@@ -885,6 +885,37 @@ nav {
 
 .realised-project {
   width: 25%;
+}
+
+@media (max-width: 992px) {
+  .realised-project {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .realised-title h2 {
+    padding: 60px 0;
+    margin: 0 2%;
+  }
+  .realised-text {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 425px) {
+  .realised-project {
+    width: 100%;
+  }
+  .realised-title h2 {
+    padding: 40px 0;
+    margin: 0 2%;
+  }
+  .realised-text {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
 }
 
 *, *::after, *:before {

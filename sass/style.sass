@@ -7,6 +7,7 @@
 @import 'view'
 @import 'picking'
 @import 'realised'
+@import 'clientele'
 
 
 *, *::after, *:before
@@ -41,3 +42,19 @@ body
 @media (max-width: 1024px)
   .container
     width: auto
+
+@media (max-width: 768px)
+  .title
+    font-size: 30px
+    span
+      font-size: 25px
+  .subtitle
+    font-size: 25px
+
+@media (max-width: 425px)
+  .title
+    font-size: 25px
+    span
+      font-size: 20px
+  .subtitle
+    font-size: 20px

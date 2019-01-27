@@ -441,11 +441,7 @@ nav {
     padding-top: 30px;
   }
   .menu-text__title {
-    font-size: 30px;
     line-height: 30px;
-  }
-  .menu-text__title span {
-    font-size: 20px;
   }
 }
 
@@ -634,6 +630,15 @@ nav {
   border: 0;
 }
 
+@media (max-width: 768px) {
+  .view-text__title {
+    margin-top: 60px;
+  }
+  .view-text__subtitle {
+    margin-bottom: 0;
+  }
+}
+
 @media (max-width: 375px) {
   .card {
     padding: 0 3%;
@@ -701,7 +706,7 @@ nav {
 
 .arrow-right {
   background: url("../img/picking/button-left.png") no-repeat center;
-  margin-left: 93%;
+  margin-left: 96%;
   z-index: 1;
 }
 
@@ -832,6 +837,12 @@ nav {
   }
 }
 
+@media (max-width: 768px) {
+  .picking-text__subtitle {
+    margin-bottom: 40px;
+  }
+}
+
 @media (max-width: 375px) {
   .picking-text__title {
     margin-top: 30px;
@@ -853,7 +864,7 @@ nav {
   text-align: center;
 }
 
-.realised-title h2 {
+.realised-title {
   font-size: 24px;
   font-weight: 400;
   line-height: 31px;
@@ -894,7 +905,7 @@ nav {
 }
 
 @media (max-width: 768px) {
-  .realised-title h2 {
+  .realised-title {
     padding: 60px 0;
     margin: 0 2%;
   }
@@ -908,13 +919,60 @@ nav {
   .realised-project {
     width: 100%;
   }
-  .realised-title h2 {
+  .realised-title {
     padding: 40px 0;
     margin: 0 2%;
   }
   .realised-text {
     padding-top: 20px;
     padding-bottom: 40px;
+  }
+}
+
+.slick-slider {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.clientele-img img {
+  margin: auto;
+  max-width: 90%;
+}
+
+.clientele-text__title {
+  text-align: center;
+  margin: 100px 0;
+  font-family: 'ProximaNova-Light', sans-serif;
+}
+
+.clientele-fotorama {
+  margin: 0 10px;
+}
+
+.clientele-slider {
+  margin-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+  .clientele-text__title {
+    margin: 60px 0;
+  }
+  .clientele-slider {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 425px) {
+  .clientele-text__title {
+    margin: 40px 0;
+  }
+  .clientele-slider {
+    margin-bottom: 40px;
   }
 }
 
@@ -965,6 +1023,30 @@ body {
 @media (max-width: 1024px) {
   .container {
     width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 30px;
+  }
+  .title span {
+    font-size: 25px;
+  }
+  .subtitle {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 425px) {
+  .title {
+    font-size: 25px;
+  }
+  .title span {
+    font-size: 20px;
+  }
+  .subtitle {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

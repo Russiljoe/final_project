@@ -36,7 +36,7 @@
     <div class="container">
       <div class="menu-wrap">
         <div class="menu-text">
-          <h1 class="menu-text__title">Изготовление макетов любой сложности 
+          <h1 class="menu-text__title title">Изготовление макетов любой сложности 
             <br> <span>Продажи. Инвестиции. Имидж.</span>
           </h1>
           <div class="menu-advantages">
@@ -84,9 +84,9 @@
     <div class="container">
       <div class="view-text">
         <div class="view-text__elem">
-          <h2 class="view-text__title">Виды макетов</h2>
+          <h2 class="view-text__title title">Виды макетов</h2>
           <ul><li></li></ul>
-          <h3 class="view-text__subtitle">Создаем макеты от небольших домов до космических станций</h3>
+          <h3 class="view-text__subtitle subtitle">Создаем макеты от небольших домов до космических станций</h3>
         </div>
       </div>
       <div class="view-wrap">
@@ -230,9 +230,9 @@
     <div class="container">
       <div class="picking-text">
         <div class="picking-text__elem">
-          <h2 class="picking-text__title">Реализованные проекты</h2>
+          <h2 class="picking-text__title title">Реализованные проекты</h2>
           <ul><li></li></ul>
-          <h3 class="picking-text__subtitle">
+          <h3 class="picking-text__subtitle subtitle">
             Более 100 компаний уже решают свои бизнес – задачи с помощью наших макетов
           </h3>
         </div>
@@ -313,8 +313,8 @@
   <section class="realised">
     <a name="realised"></a>
     <div class="container">
-      <div class="realised-title">
-        <h2>Все макеты, изготовленные нашей макетной мастерской,
+      <div class="realised-elem">
+        <h2 class="realised-title subtitle">Все макеты, изготовленные нашей макетной мастерской,
         помогли клиентам выполнить поставленные цели, а именно:</h2>
       </div>
       <div class="realised-wrap">
@@ -380,6 +380,83 @@
     </div>
   </section><!-- realised -->
 
+  <section class="clientele">
+    <a name="clientele"></a>
+    <div class="container">
+      <div class="clientele-text__elem">
+        <h2 class="clientele-text__title title">Наши клиенты</h2>
+      </div>
+      <div class="slider-clientele clientele-slider slick-slider">
+        <div class="picking-slider_item">
+          <div class="row">
+            <div class="row-slick">
+              <div class="fotorama clientele-fotorama" data-nav="thumbs">
+                <a class="photo-slider_item clientele-img" href="#">
+                  <img src="img/clientele/Gazprombank.png" alt="1">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div><!-- picking-slider_item -->
+        <div class="picking-slider_item">
+          <div class="row">
+            <div class="row-slick">
+              <div class="fotorama clientele-fotorama" data-nav="thumbs">
+                <a class="photo-slider_item clientele-img" href="#">
+                  <img src="img/clientele/Alfa-bank.png" alt="2">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div><!-- picking-slider_item -->
+        <div class="picking-slider_item">
+          <div class="row">
+            <div class="row-slick">
+              <div class="fotorama clientele-fotorama" data-nav="thumbs">
+                <a class="photo-slider_item clientele-img" href="#">
+                  <img src="img/clientele/Moscow.png" alt="3">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div><!-- picking-slider_item -->
+        <div class="picking-slider_item">
+          <div class="row">
+            <div class="row-slick">
+              <div class="fotorama clientele-fotorama" data-nav="thumbs">
+                <a class="photo-slider_item clientele-img" href="#">
+                  <img src="img/clientele/VTB24.png" alt="4">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div><!-- picking-slider_item -->
+        <div class="picking-slider_item">
+          <div class="row">
+            <div class="row-slick">
+              <div class="fotorama clientele-fotorama" data-nav="thumbs">
+                <a class="photo-slider_item clientele-img" href="#">
+                  <img src="img/clientele/Lada.png" alt="5">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div><!-- picking-slider_item -->
+        <div class="picking-slider_item">
+          <div class="row">
+            <div class="row-slick">
+              <div class="fotorama clientele-fotorama" data-nav="thumbs">
+                <a class="photo-slider_item clientele-img" href="#">
+                  <img src="img/clientele/Gazprombank.png" alt="1">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div><!-- picking-slider_item -->
+      </div>
+    </div>
+  </section><!-- picking -->
+
   <script src="js/script.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="js/slick.min.js"></script>
@@ -390,6 +467,39 @@
       slidesToScroll: 1,
       nextArrow: '<div class="arrow arrow-right"></div>',
       prevArrow: '<div class="arrow arrow-left"></div>',
+      });
+    });
+  </script>
+  <script>
+    jQuery(document).ready(function($) {
+    $('.slider-clientele').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      nextArrow: '<div class="arrow arrow-right"></div>',
+      prevArrow: '<div class="arrow arrow-left"></div>',
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
       });
     });
   </script>

@@ -10,8 +10,6 @@
 @import 'clientele'
 @import 'contacts'
 
-
-
 *, *::after, *:before
   box-sizing: border-box
   outline: none
@@ -29,8 +27,6 @@ body
 .button
   outline: none 
   border: 1px solid #aeaeae
-  &:hover
-    cursor: pointer
 .input
   outline: none
 .button-hover
@@ -38,6 +34,11 @@ body
   color: #ffffff
 .map
   height: 416px
+
+@media (min-width: 991px)
+  .button
+    &:hover
+      cursor: pointer
 
 @media (max-width: 1920px)
   .container

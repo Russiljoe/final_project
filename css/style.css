@@ -356,12 +356,6 @@ nav {
   text-transform: uppercase;
 }
 
-.menu-contact__button:hover {
-  background-color: #000000;
-  color: #ffffff;
-  border: 0;
-}
-
 .menu-contact__title {
   padding-left: 14%;
   padding-right: 14%;
@@ -434,6 +428,14 @@ nav {
 
 .menu-advantages__img-4 {
   background-image: url("../img/manu/map-location.png");
+}
+
+@media (min-width: 991px) {
+  .menu-contact__button:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border: 0;
+  }
 }
 
 @media (max-width: 992px) {
@@ -639,26 +641,37 @@ nav {
   margin: 0 auto;
 }
 
-.card:hover {
-  -webkit-box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1);
+@media (min-width: 991px) {
+  .card:hover {
+    -webkit-box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1);
+  }
+  .card:hover .card-button {
+    background-color: #23bac1;
+    color: #ffffff;
+    border: 0;
+  }
+  .card:hover img {
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+  }
+  .card-button:not(.menu-contact__button):hover {
+    background-color: #000000;
+    color: #ffffff;
+    border: 0;
+  }
 }
 
-.card:hover .card-button {
-  background-color: #23bac1;
-  color: #ffffff;
-  border: 0;
-}
-
-.card:hover img {
-  -webkit-filter: grayscale(0);
-          filter: grayscale(0);
-}
-
-.card-button:not(.menu-contact__button):hover {
-  background-color: #000000;
-  color: #ffffff;
-  border: 0;
+@media (max-width: 991px) {
+  .card .card-button {
+    background-color: #23bac1;
+    color: #ffffff;
+    border: 0;
+  }
+  .card img {
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+  }
 }
 
 @media (max-width: 768px) {
@@ -1096,10 +1109,6 @@ body {
   border: 1px solid #aeaeae;
 }
 
-.button:hover {
-  cursor: pointer;
-}
-
 .input {
   outline: none;
 }
@@ -1111,6 +1120,12 @@ body {
 
 .map {
   height: 416px;
+}
+
+@media (min-width: 991px) {
+  .button:hover {
+    cursor: pointer;
+  }
 }
 
 @media (max-width: 1920px) {

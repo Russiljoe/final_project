@@ -977,6 +977,49 @@ nav {
   }
 }
 
+.contacts {
+  height: 146px;
+  background-color: #191919;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts-address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts-address__img {
+  margin: 0 20px;
+}
+
+.contacts-address__text {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.contacts-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contacts-text__phone {
+  color: #ffffff;
+}
+
 *, *::after, *:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1013,6 +1056,10 @@ body {
 .button-hover {
   background-color: #23bac1;
   color: #ffffff;
+}
+
+.map {
+  height: 416px;
 }
 
 @media (max-width: 1920px) {

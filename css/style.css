@@ -208,6 +208,7 @@
 nav {
   margin: auto;
   margin-left: 0;
+  width: 80%;
 }
 
 .icon {
@@ -281,6 +282,9 @@ nav {
     margin-top: -17px;
     display: block;
     color: #ffffff;
+  }
+  nav {
+    width: 50%;
   }
 }
 

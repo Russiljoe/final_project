@@ -269,7 +269,7 @@
                 </div>
               </div>
               <div class="descrition-block descrition-button">
-                <button class="button row-button menu-contact__button">заказать макет</button>
+                <button class="button row-button menu-contact__button button-callback">заказать макет</button>
               </div>
             </div>
           </div>
@@ -303,7 +303,7 @@
                 </div>
               </div>
               <div class="descrition-block descrition-button">
-                <button class="button row-button menu-contact__button">заказать макет</button>
+                <button class="button row-button menu-contact__button button-callback">заказать макет</button>
               </div>
             </div>
           </div>
@@ -496,13 +496,13 @@
     new WOW().init();
   </script>
   <script>
-      document.querySelector('.button-callback').addEventListener('click', function () {
-      document.querySelector('#modal-callback').classList.toggle('modal_visible');
-    })
-      document.querySelector('.modal__close').addEventListener('click', function () {
-      document.querySelector('#modal-callback').classList.toggle('modal_visible');
-    })
     jQuery(document).ready(function($) {
+    $('.button-callback').click(function () {
+      $('#modal-callback').addClass('modal_visible');
+    })
+    $('.modal__close').click(function () {
+      $('#modal-callback').removeClass('modal_visible');
+    })
     $('.slider').slick({
       slidesToShow: 1,
       slidesToScroll: 1,

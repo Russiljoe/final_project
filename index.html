@@ -70,10 +70,12 @@
         </div>
         <div class="menu-contact">
           <h2 class="menu-contact__title">Оставьте заявку и получите расчет стоимость макета в течение <span>30 минут</span></h2>
-          <input type="text" name="fio" class="input menu-contact__input" placeholder="Ваше имя">
-          <input type="tel" name="phone" class="input menu-contact__input" placeholder="Контактный телефон" pattern="7-[0-9]{3}-[0-9]{3}-[0-9]{4}">
-          <input type="email" name="email" class="input menu-contact__input" placeholder="Электронная почта">
-          <button type="submit" class="button menu-contact__button" id="callback-button">Оставить заявку</button>
+          <form action="#" class="js-ajax">
+            <input type="text" name="fio" class="input menu-contact__input" placeholder="Ваше имя">
+            <input type="tel" name="phone" class="input menu-contact__input" placeholder="Контактный телефон" pattern="7-[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            <input type="email" name="email" class="input menu-contact__input" placeholder="Электронная почта">
+            <button type="submit" class="button menu-contact__button">Оставить заявку</button>
+          </form>
         </div>
       </div>
     </div>
@@ -469,10 +471,12 @@
           <div class="modal-form">
             <div class="menu-contact">
               <h2 class="menu-contact__title">Оставьте заявку и получите расчет стоимость макета в течение <span>30 минут</span></h2>
-              <input type="text" name="fio" class="input menu-contact__input"  placeholder="Ваше имя">
-              <input type="tel" name="phone" class="input menu-contact__input" placeholder="Контактный телефон" pattern="7-[0-9]{3}-[0-9]{3}-[0-9]{4}">
-              <input type="email" name="email" class="input menu-contact__input" type="email" placeholder="Электронная почта">
-              <button type="submit" class="button menu-contact__button modal-contact__button" id="callback-button">Оставить заявку</button>
+              <form action="#" class="js-ajax">
+                <input type="text" name="fio" class="input menu-contact__input"  placeholder="Ваше имя">
+                <input type="tel" name="phone" class="input menu-contact__input" placeholder="Контактный телефон" pattern="7-[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <input type="email" name="email" class="input menu-contact__input" type="email" placeholder="Электронная почта">
+                <button type="submit" class="button menu-contact__button modal-contact__button" id="callback-button">Оставить заявку</button>
+              </form>
               <div class="menu-contact__title modal-contact__title">
                 Или Вы можете перезвонить нам сами по телефону: <br>
                 <a class="header-text__phone modal-text__phone" href="tel:+79999999999">+7 (9999) 99-99-99</a>
@@ -538,7 +542,7 @@
     $('.js-ajax').on('submit', function () {
       var data = $('.js-ajax').serialize();
       $.ajax({
-        url: 'mailer\smart.php',
+        url: 'mailer/smart.php',
         data: data,
         success: function (data) {
           if (data == 1)

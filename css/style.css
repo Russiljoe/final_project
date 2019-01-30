@@ -203,6 +203,7 @@
 .header-text__text {
   color: #22bac1;
   font-size: 14px;
+  cursor: pointer;
 }
 
 nav {

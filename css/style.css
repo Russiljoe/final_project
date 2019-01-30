@@ -229,6 +229,7 @@ nav {
   color: #000000;
   padding: 0;
   padding-right: 3%;
+  cursor: pointer;
 }
 
 .topnavresponsive {
@@ -1205,6 +1206,10 @@ body {
   border: 1px solid #aeaeae;
 }
 
+.button:hover {
+  cursor: pointer;
+}
+
 .input {
   outline: none;
 }
@@ -1216,12 +1221,6 @@ body {
 
 .map {
   height: 416px;
-}
-
-@media (min-width: 991px) {
-  .button:hover {
-    cursor: pointer;
-  }
 }
 
 @media (max-width: 1920px) {

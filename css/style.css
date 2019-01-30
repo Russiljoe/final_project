@@ -753,13 +753,16 @@ nav {
 }
 
 .arrow-right {
-  background: url("../img/picking/button-left.png") no-repeat center;
-  margin-left: 96%;
+  background: url("../img/picking/button-left.png") no-repeat center right;
+  position: relative;
+  padding-left: 8%;
   z-index: 1;
 }
 
 .arrow-left {
-  background: url("../img/picking/button-right.png") no-repeat center;
+  background: url("../img/picking/button-right.png") no-repeat center left;
+  position: relative;
+  padding-right: 8%;
   z-index: 1;
 }
 
@@ -880,7 +883,6 @@ nav {
     display: none;
   }
   .arrow-right {
-    margin-left: 95%;
     margin-top: 10%;
   }
   .arrow-left {
@@ -893,7 +895,6 @@ nav {
     margin-top: 30px;
   }
   .arrow-right {
-    margin-left: 89%;
     margin-top: 0;
   }
   .arrow-left {
@@ -1086,6 +1087,96 @@ nav {
   .contacts-address__img {
     margin-right: 10px;
   }
+}
+
+.modal {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.52);
+  top: 0;
+  left: 0;
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.modal-container {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal_hidden {
+  display: none;
+}
+
+.modal_visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal__dialog {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  height: auto;
+  background-color: #fff;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.modal__close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.modal__close:hover {
+  cursor: pointer;
+}
+
+.modal-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.modal-contact__title {
+  padding-top: 0;
+}
+
+.modal-contact__button {
+  margin-bottom: 20px;
 }
 
 *, *::after, *:before {

@@ -1,5 +1,5 @@
 .contacts
-  height: 146px
+  height: 145px
   background-color: #191919
   color: #ffffff
   display: flex
@@ -9,14 +9,18 @@
     align-items: center
     &__img
       margin-right: 20px
+      display: flex
     &__text
       font-size: 13px
       font-weight: 300
   &-data
     display: flex
     justify-content: space-between
-  &-text__phone
-    color: #ffffff
+  &-text
+    &__phone
+      color: #ffffff
+    &__text
+      font-size: 13.3px
 
 @media (max-width: 768px)
   .contacts

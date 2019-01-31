@@ -17,34 +17,34 @@
       font-size: 36px
       font-weight: 400
       margin: 
-        top: 100px
-        bottom: 25px
+        top: 91px
+        bottom: 20px
     &__subtitle
       font-size: 20px
       font-weight: 300
       margin: 
-        top: 25px
+        top: 39px
         bottom: 80px
   &-wrap
     display: flex
     flex-wrap: wrap
-    justify-content: space-evenly
+    justify-content: space-around
     text-align: center
 .card
   display: flex
   flex-wrap: wrap
   flex-flow: column
   max-width: 350px
-  padding: 25px
+  padding: 22px
     top: 0
-  margin: 10px 0
+  margin: 
+    top: 10px
+    bottom: 26px
   border: 1px solid #e8e8e800
   &-title
     font-size: 20px
     font-weight: 400
-    margin:
-      left: auto
-      right: auto
+    margin: 14px auto
   &-text
     font-size: 16px
     font-weight: 300
@@ -53,7 +53,8 @@
       font-size: 16px
       line-height: 35px
       margin: auto
-        top: 0 
+        top: 0
+      line-height: 33px
       ul
         margin: 0
         padding: 0
@@ -72,23 +73,30 @@
         line-height: 21px
   &-img
     &__wrap
-      margin-bottom: 25px
+      margin:
+        top: 8px
+        bottom: 19px
       img
-        width: 290px
+        width: 303px
         height: 220px
         filter: grayscale(100%)
   &-button
     margin:
-      top: 20px
+      top: 23px
       bottom: 25px
-    height: 60px
+    height: 55px
     font:
-      size: 13px
+      size: 13.2px
       weight: 400
     letter-spacing: 0.33px
     text-transform: uppercase
     width: 230px
     background-color: #ffffff
+    padding: 0
+    +Bold
+    display: flex
+    justify-content: center
+    padding-left: 5px
     &__wrap
       margin: 0 auto
 

@@ -20,14 +20,14 @@
       font-size: 36px
       font-weight: 400
       margin: 
-        top: 100px
-        bottom: 25px
+        top: 85px
+        bottom: 24px
     &__subtitle
       font-size: 20px
       font-weight: 300
       margin: 
-        top: 25px
-        bottom: 80px
+        top: 36px
+        bottom: 97px
     &_item
       border: 1px solid #000000
 .arrow
@@ -39,12 +39,12 @@
   &-right
     background: url('../img/picking/button-left.png') no-repeat center right
     position: relative
-    padding-left: 8%
+    padding-left: 5%
     z-index: 1
   &-left
     background: url('../img/picking/button-right.png') no-repeat center left
     position: relative
-    padding-right: 8%
+    padding-right: 6%
     z-index: 1
 .row
   width: -webkit-fill-available 
@@ -53,37 +53,51 @@
   justify-content: center
   &-last
     width: -webkit-fill-available
-    margin: auto 0
+    margin: 0
     display: flex
     flex-wrap: wrap
     justify-content: center
     justify-content: space-between
     text-align: left
+    &_descrition-block
+      margin-top: 24px
   &-slick
     h3
+      font-size: 24px
+      font-weight: 400
       width: -webkit-fill-available
       display: block
       margin: 0
-        bottom: auto
+      margin-bottom: 13px
     &_left
       display: flex
       flex-wrap: wrap
-      max-width: 36%
+      max-width: 40%
   &-button
     margin: 0
       top: auto
+    width: 213px
+    font-size: 13px
+    +Regular
 .fotorama
-  margin-right: 87px
+  margin-right: 88px
 .slider
   display: flex
   align-items: center
 .descrition
   &-block
-    span
-      padding: 5px
+    font-size: 12px
+    p
+      margin-top: 10px
+      margin-bottom: 0
+      font-size: 16px
   &-button
     margin: auto 0
     margin-bottom: 0
+.row-last_block
+  font-size: 12px
+  small
+    margin-bottom: 5px
 
 @media (max-width: 992px)
   .fotorama 

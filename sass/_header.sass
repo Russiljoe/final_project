@@ -31,7 +31,7 @@
 nav
   margin: auto
   margin-left: 0
-  width: 80%
+  width: 68%
 .icon
   text-decoration: none
   display: none
@@ -41,9 +41,10 @@ nav
 .topnav
   font-size: 14px
   margin: auto 0
+  display: flex
+  justify-content: space-between
   a
     color: #000000
-    padding: 0 1.2% 0 2.2%
     cursor: pointer
     +Semibold
 .topnavresponsive
@@ -60,6 +61,19 @@ nav
     margin: 0
     color: #ffffff
     border: 0.1px solid #fffafa42
+
+@media (min-width: 991px)
+  .topnav
+    a
+      &:hover
+        text-shadow: 0.5px 0.5px 0.5px #4F4F4F
+        transition: box-shadow 200ms linear 0ms, text-shadow 200ms linear 0ms
+  .header
+    &-text
+      &__text
+        &:hover
+          text-shadow: 0.5px 0.5px 0.5px #4F4F4F
+          transition: box-shadow 200ms linear 0ms, text-shadow 200ms linear 0ms
 
 @media screen and (max-width: 992px)
   .header

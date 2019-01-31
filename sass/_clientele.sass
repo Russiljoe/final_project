@@ -5,6 +5,7 @@
   &-img
     img
       margin: auto
+      width: 160px
   &-text
     &__title
       text-align: center
@@ -26,6 +27,23 @@
     padding-left: 7.5%
   &-left__clientele
     padding-right: 7%
+
+@media (min-width: 991px)
+  .clientele
+    &-img
+      img
+        filter: grayscale(100%)
+      img:hover
+        filter: grayscale(0)
+
+@media (max-width: 991px)
+  .card
+    .card-button
+      background-color: #23bac1
+      color: #ffffff 
+      border: 0
+    img
+      filter: grayscale(0)
 
 @media (max-width: 768px)
   .clientele

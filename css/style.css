@@ -214,7 +214,7 @@
 nav {
   margin: auto;
   margin-left: 0;
-  width: 80%;
+  width: 68%;
 }
 
 .icon {
@@ -228,11 +228,16 @@ nav {
 .topnav {
   font-size: 14px;
   margin: auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .topnav a {
   color: #000000;
-  padding: 0 1.2% 0 2.2%;
   cursor: pointer;
   font-family: 'ProximaNova-Semibold', sans-serif;
 }
@@ -258,6 +263,23 @@ nav {
   margin: 0;
   color: #ffffff;
   border: 0.1px solid #fffafa42;
+}
+
+@media (min-width: 991px) {
+  .topnav a:hover {
+    text-shadow: 0.5px 0.5px 0.5px #4F4F4F;
+    -webkit-transition: text-shadow 200ms linear 0ms, -webkit-box-shadow 200ms linear 0ms;
+    transition: text-shadow 200ms linear 0ms, -webkit-box-shadow 200ms linear 0ms;
+    transition: box-shadow 200ms linear 0ms, text-shadow 200ms linear 0ms;
+    transition: box-shadow 200ms linear 0ms, text-shadow 200ms linear 0ms, -webkit-box-shadow 200ms linear 0ms;
+  }
+  .header-text__text:hover {
+    text-shadow: 0.5px 0.5px 0.5px #4F4F4F;
+    -webkit-transition: text-shadow 200ms linear 0ms, -webkit-box-shadow 200ms linear 0ms;
+    transition: text-shadow 200ms linear 0ms, -webkit-box-shadow 200ms linear 0ms;
+    transition: box-shadow 200ms linear 0ms, text-shadow 200ms linear 0ms;
+    transition: box-shadow 200ms linear 0ms, text-shadow 200ms linear 0ms, -webkit-box-shadow 200ms linear 0ms;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -1044,6 +1066,7 @@ nav {
 
 .clientele-img img {
   margin: auto;
+  width: 160px;
 }
 
 .clientele-text__title {
@@ -1081,6 +1104,29 @@ nav {
 
 .arrow-left__clientele {
   padding-right: 7%;
+}
+
+@media (min-width: 991px) {
+  .clientele-img img {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+  }
+  .clientele-img img:hover {
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+  }
+}
+
+@media (max-width: 991px) {
+  .card .card-button {
+    background-color: #23bac1;
+    color: #ffffff;
+    border: 0;
+  }
+  .card img {
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+  }
 }
 
 @media (max-width: 768px) {

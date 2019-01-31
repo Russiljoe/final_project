@@ -267,14 +267,14 @@ nav {
 
 @media (min-width: 991px) {
   .topnav a:hover {
-    text-shadow: 0.5px 0.5px 0.5px #4F4F4F;
+    text-shadow: 0.5px 0.5px 0.5px #00000047;
     -webkit-transition: text-shadow 200ms linear 0ms, -webkit-box-shadow 200ms linear 0ms;
     transition: text-shadow 200ms linear 0ms, -webkit-box-shadow 200ms linear 0ms;
     transition: box-shadow 200ms linear 0ms, text-shadow 200ms linear 0ms;
     transition: box-shadow 200ms linear 0ms, text-shadow 200ms linear 0ms, -webkit-box-shadow 200ms linear 0ms;
   }
   .header-text__text:hover {
-    text-shadow: 0.5px 0.5px 0.5px #4F4F4F;
+    text-shadow: 0.5px 0.5px 0.5px #00000047;
     -webkit-transition: text-shadow 200ms linear 0ms, -webkit-box-shadow 200ms linear 0ms;
     transition: text-shadow 200ms linear 0ms, -webkit-box-shadow 200ms linear 0ms;
     transition: box-shadow 200ms linear 0ms, text-shadow 200ms linear 0ms;
@@ -378,8 +378,10 @@ nav {
   height: 50px;
   margin-top: 15px;
   font-size: 13px;
+  font-weight: 300;
   text-align: center;
   border: 1px solid #e8e8e8;
+  font-family: 'ProximaNova-Regular', sans-serif;
 }
 
 .menu-contact__button {

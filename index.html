@@ -10,11 +10,12 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
   <header class="header">
     <div class="container">
       <div class="header-wrap">
         <nav>
-          <a href="#" id="menu" class="icon">&#9776 МЕНЮ</a>
+          <a href="#" id="menu" class="icon">&#9776МЕНЮ</a>
           <div class="topnav" id="myTopnav">
             <a href="#">Главная</a>
             <a href="#view">Виды макетов</a>
@@ -25,7 +26,7 @@
           </div>
         </nav>
         <div class="header-text">
-          <a class="header-text__phone" href="tel:+79999999999">7 999 999-99-99</a><br>
+          <a class="header-text__phone" href="tel:+78008913333">8 800 891-33-33</a><br>
           <a class="header-text__text button-callback"><u>Заказать обратный звонок</u></a>
         </div>
       </div>
@@ -71,9 +72,9 @@
         <div class="menu-contact">
           <h2 class="menu-contact__title">Оставьте заявку и получите <br> расчет стоимость макета <br> в течение <span>30 минут</span></h2>
           <form action="#" class="js-ajax">
-            <input type="text" name="fio" class="input menu-contact__input" id="user_name" placeholder="Ваше имя">
-            <input type="tel" name="phone" class="input menu-contact__input" id="user_phone" placeholder="Контактный телефон">
-            <input type="email" name="email" class="input menu-contact__input" placeholder="Электронная почта">
+            <input type="text" name="fio" required class="text input menu-contact__input" id="user_name" placeholder="Ваше имя">
+            <input type="tel" name="phone" required class="phone input menu-contact__input" id="user_phone" placeholder="Контактный телефон">
+            <input type="email" name="email" required class="input menu-contact__input" placeholder="Электронная почта">
             <button type="submit" class="button menu-contact__button">Оставить заявку</button>
           </form>
         </div>
@@ -470,7 +471,7 @@
           </div>
         </div>
         <div class="header-text">
-          <a class="header-text__phone contacts-text__phone" href="tel:+79999999999">+7 999 999-99-99</a><br>
+          <a class="header-text__phone contacts-text__phone" href="tel:+78008913333">8 800 891-33-33</a><br>
           <a class="header-text__text button-callback contacts-text__text"><u>Заказать обратный звонок</u></a>
         </div>
       </div>
@@ -486,9 +487,9 @@
             <div class="menu-contact">
               <h2 class="menu-contact__title">Оставьте заявку и получите расчет стоимость макета в течение <span>30 минут</span></h2>
               <form action="#" class="js-ajax">
-                <input type="text" name="fio" class="input menu-contact__input" id="user_name" placeholder="Ваше имя">
-                <input type="tel" name="phone" class="input menu-contact__input" id="user_phone" placeholder="Контактный телефон">
-                <input type="email" name="email" class="input menu-contact__input" placeholder="Электронная почта">
+                <input type="text" name="fio" required class="text input menu-contact__input" id="user_name" placeholder="Ваше имя">
+                <input type="tel" name="phone" required class="phone input menu-contact__input" id="user_phone" placeholder="Контактный телефон">
+                <input type="email" name="email" required class="email input menu-contact__input" placeholder="Электронная почта">
                 <button type="submit" class="button menu-contact__button modal-contact__button" id="callback-button">Оставить заявку</button>
               </form>
               <div class="menu-contact__title modal-contact__title">
@@ -506,6 +507,7 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/wow.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
   <script>
     new WOW().init();
   </script>
@@ -574,6 +576,11 @@
         }
       });
        return false;
+    });
+  </script>
+  <script>
+    $(document).ready(function() {
+      $(".phone").mask("+7 (999) 999-99-99");
     });
   </script>
 

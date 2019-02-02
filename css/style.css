@@ -379,7 +379,6 @@ nav {
   font-weight: 300;
   text-align: center;
   border: 1px solid #e8e8e8;
-  font-family: 'ProximaNova-Regular', sans-serif;
 }
 
 .menu-contact__button {
@@ -401,11 +400,11 @@ nav {
   padding-bottom: 9px;
   margin: 0;
   font-size: 18.3px;
-  font-family: 'ProximaNova-Light', sans-serif;
+  font-weight: 400;
 }
 
 .menu-contact__title span {
-  font-family: 'ProximaNova-Bold', sans-serif;
+  font-weight: 700;
 }
 
 .backstretch {
@@ -675,7 +674,6 @@ nav {
   width: 230px;
   background-color: #ffffff;
   padding: 0;
-  font-family: 'ProximaNova-Bold', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -863,7 +861,6 @@ nav {
   margin-top: auto;
   width: 213px;
   font-size: 13px;
-  font-family: 'ProximaNova-Regular', sans-serif;
 }
 
 .fotorama {
@@ -987,7 +984,6 @@ nav {
 }
 
 .realised-text {
-  font-family: 'ProximaNova-Light', sans-serif;
   padding-bottom: 84px;
   padding-top: 40px;
   font-size: 15px;
@@ -1073,7 +1069,6 @@ nav {
   text-align: center;
   margin: 92px 0;
   margin-bottom: 90px;
-  font-family: 'ProximaNova-Light', sans-serif;
 }
 
 .clientele-fotorama {
@@ -1321,6 +1316,7 @@ body {
 }
 
 .button {
+  font-family: 'ProximaNova-Semibold', sans-serif;
   outline: none;
   border: 1px solid #aeaeae42;
 }

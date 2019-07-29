@@ -315,15 +315,6 @@ nav {
   }
 }
 
-@media (max-width: 768px) {
-  .header-text__phone {
-    font-size: 14px;
-  }
-  .header-text__text {
-    font-size: 14px;
-  }
-}
-
 .menu {
   background: url(../img/manu/background.png) no-repeat;
   background-color: #010304;
@@ -731,7 +722,7 @@ nav {
 
 @media (max-width: 375px) {
   .card {
-    padding: 0 3%;
+    padding: 0 2%;
   }
 }
 
@@ -907,7 +898,7 @@ nav {
 
 @media (max-width: 768px) {
   .picking {
-    margin-bottom: 30px;
+    margin-bottom: 0;
   }
   .picking-text__subtitle {
     margin-bottom: 40px;
